@@ -41,28 +41,35 @@
   <script src="/client.js"></script>
 
 </head>
-<body background="/images/background3.jpg" onload="welcomeEventListeners()">
+<body onload="welcomeEventListeners()">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 7.8%">
+      <div class="docs-section" id="intro" style="margin-top: 7.8%">
         <h4>Hi, I'm Per Welander</h4>
-        <p>I'm finishing my studies in Biomedical Enginnering this summer and I'm currently looking for a new challenge. Feel free to send me a message if you have one for me.</p>
+        <p>I'm finishing my studies in Biomedical Enginnering this summer and I'm always up for a new challenge. Feel free to send me a message if you have one for me.</p>
       </div>
     </div>
   </div>
 
-  <span class="padding-span"></span>
-  <div class="container" id="formcontainer">
+  <div class="container" style="">
+    <div id="headerImage" class="center">
+      <img src="/images/b9.jpg" />
+    </div>
+  </div>
+
+  <div class="container" id="formcontainer" style="margin-bottom: 7%">
     <form id="formchallenge">
-    <div class="six columns">
+    <div class="sixteen columns">
       <div class="row">
         <div class="six columns">
-          <input class="u-full-width" type="email" placeholder="your@email.com" id="emailInput">
+          <label for="emailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="example@email.com" id="emailInput">
         </div>
         <div class="six columns">
+          <label for="recipientInput">Reason for contacting</label>
           <select class="u-full-width" id="recipientInput">
             <option value="Option 1">I have a challenge for you</option>
             <option value="Option 2">Admiration</option>
@@ -70,7 +77,8 @@
           </select>
         </div>
       </div>
-      <textarea class="u-full-width" placeholder="Message" id="message"></textarea>
+      <label for="message">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Per..." id="message"></textarea>
       <button class="button" type="submit">Send</button>
     </div>
     </form>

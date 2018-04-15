@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -112,6 +112,20 @@
 
 }
 
+#headerImage img {
+ max-width: 100%;
+ height: auto;
+ width: auto;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -127,7 +141,10 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
 
 /* Padding
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
