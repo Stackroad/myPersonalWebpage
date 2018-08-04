@@ -5,7 +5,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-117192141-1');
 </script>
 
@@ -48,45 +47,45 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
+
     <section class="header">
-      <h2 class="title">Hi, I'm Per Welander</h2>
-      <p>I'm finishing my studies in Biomedical Enginnering this summer and I'm always up for a new challenge. Feel free to send me a message if you have one for me.</p>
+      <h2 class="title">Surfvarning</h2>
+      <p>Never miss a surf again</p>
+      <div id="headerImage" class="center">
+        <img src="/images/wave.jpg" />
+      </div>
     </section>
 
-    <div id="headerImage" class="center">
-      <img src="/images/b9.jpg" />
-    </div>
 
-
-  <div class="container" id="formcontainer" style="margin-bottom: 7%">
-    <form id="formchallenge">
-    <div class="sixteen columns">
-      <div class="row">
-        <div class="six columns">
-          <label for="emailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="example@email.com" id="emailInput">
+  <div class="docs-section" id="grid">
+    <div class="container" id="formcontainer">
+      <form method="POST" action="/subscription">
+      <p>Enter email to get notifications when there will be waves at your local spot.</p>
+      <!-- <div class="sixteen columns"> -->
+        <div class="row">
+          <div class="six columns">
+            <label for="emailInput">Your email</label>
+            <input class="u-full-width" type="email" placeholder="example@email.com" id="emailInput">
+          </div>
+          <div class="six columns">
+            <label for="recipientInput">Get notifactions for</label>
+            <select class="u-full-width" id="recipientInput">
+              <option value="Option 1">Apelviken</option>
+            </select>
+          </div>
         </div>
-        <div class="six columns">
-          <label for="recipientInput">Reason for contacting</label>
-          <select class="u-full-width" id="recipientInput">
-            <option value="Option 1">I have a challenge for you</option>
-            <option value="Option 2">Can I get your number?</option>
-          </select>
-        </div>
-      </div>
-      <label for="message">Message</label>
-      <textarea class="u-full-width" placeholder="Hi Per..." id="message"></textarea>
-      <button class="button" type="submit">Send</button>
+        <button class="button" type="submit">Request</button>
+      <!-- </div> -->
+      </form>
     </div>
-    </form>
   </div>
 
   <div class="docs-section" id="grid">
-        <h4>Surf Varning</h4>
-        <p>Would you like to never miss a surf again? Continue to Surf Varning and we will tell you how:</p>
-        <a class="button" href="/surfvarning">Continue to Surf Varning</a>
+    <p> Next surf in Apelviken: 12 July, Thursday, 10.00-13.00 </p>
+    <p> Expected size of waves: Medium </p>
 
   </div>
+
   </div>
 
 <script>

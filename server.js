@@ -38,6 +38,19 @@ app.get('/', function (req, res) {
    res.render('welcome');
 })
 
+app.get('/surfvarning', function (req, res) {
+   res.render('surfvarning');
+})
+
+// app.post('/create', function (req, res) {
+//   console.log(req.body)
+//   var insert = new TimeReports(req.body);
+//   insert.save(function (err) {
+//     if (err) return handleError(err);
+//     res.redirect('/timereports');
+//   });
+// })
+
 app.post('/send-pushover/', function (req, res) {
   var email_input = req.body.email_input
   var recipient_input = req.body.recipient_input
